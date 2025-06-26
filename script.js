@@ -68,3 +68,15 @@ console.log("Cuadrados: " + listaCuadrados);
 function saludar(nombre) {
   return "Hola, " + nombre;
 }
+
+let saludo = saludar("Mundo");
+console.log(saludo);
+
+// Función anónima
+let funcionAnonima = function(nombre) {
+  return "Hola, " + nombre;
+}
+let saludoAnonimo = funcionAnonima("Mundo Anónimo");
+console.log(saludoAnonimo);
+
+
