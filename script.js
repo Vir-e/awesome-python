@@ -96,3 +96,11 @@ console.log(saludoConDefecto);
 
 
 
+// Función con parámetros rest
+function sumar(...numeros) {
+  return numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+}
+let suma = sumar(1, 2, 3, 4, 5);
+console.log("Suma: " + suma);
+
+
