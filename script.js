@@ -64,3 +64,7 @@ console.log("Cuadrados: " + listaCuadrados);
 
 
 
+// FUNCIONES
+function saludar(nombre) {
+  return "Hola, " + nombre;
+}
