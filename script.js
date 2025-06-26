@@ -131,3 +131,14 @@ try {
     console.error("Error: " + error.message);
 }   
 
+
+// Función con retorno de objeto
+function crearPersona(nombre, edad) {
+    return {
+        nombre: nombre,
+        edad: edad,
+        saludar: function() {
+            return "Hola, soy " + this.nombre;
+        }
+    };
+}   
