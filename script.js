@@ -68,3 +68,77 @@ console.log("Cuadrados: " + listaCuadrados);
 function saludar(nombre) {
   return "Hola, " + nombre;
 }
+
+let saludo = saludar("Mundo");
+console.log(saludo);
+
+// Función anónima
+let funcionAnonima = function(nombre) {
+  return "Hola, " + nombre;
+}
+let saludoAnonimo = funcionAnonima("Mundo Anónimo");
+console.log(saludoAnonimo);
+
+
+// Función flecha
+let funcionFlecha = (nombre) => {
+  return "Hola, " + nombre;
+}
+let saludoFlecha = funcionFlecha("Mundo Flecha");
+console.log(saludoFlecha);
+
+// Función con parámetros por defecto
+function saludarConDefecto(nombre = "Mundo") {
+  return "Hola, " + nombre;
+}
+let saludoConDefecto = saludarConDefecto();
+console.log(saludoConDefecto);
+
+
+
+// Función con parámetros rest
+function sumar(...numeros) {
+  return numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+}
+let suma = sumar(1, 2, 3, 4, 5);
+console.log("Suma: " + suma);
+
+
+// Función con parámetros spread
+let numeros = [1, 2, 3];
+function mostrarNumeros(a, b, c) {
+  console.log("Números: " + a + ", " + b + ", " + c);
+}
+mostrarNumeros(...numeros);
+
+// Función con retorno implícito
+let multiplicar = (a, b) => a * b;
+let resultadoMultiplicacion = multiplicar(2, 3);
+console.log("Multiplicación: " + resultadoMultiplicacion);
+
+
+// Función con retorno explícito
+function dividir(a, b) {
+    if (b === 0) {
+        throw new Error("No se puede dividir por cero");
+    }
+    return a / b;
+    }
+try {
+    let resultadoDivision = dividir(10, 2);
+    console.log("División: " + resultadoDivision);
+} catch (error) {
+    console.error("Error: " + error.message);
+}   
+
+
+// Función con retorno de objeto
+function crearPersona(nombre, edad) {
+    return {
+        nombre: nombre,
+        edad: edad,
+        saludar: function() {
+            return "Hola, soy " + this.nombre;
+        }
+    };
+}   
