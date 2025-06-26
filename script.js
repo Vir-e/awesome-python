@@ -80,3 +80,19 @@ let saludoAnonimo = funcionAnonima("Mundo Anónimo");
 console.log(saludoAnonimo);
 
 
+// Función flecha
+let funcionFlecha = (nombre) => {
+  return "Hola, " + nombre;
+}
+let saludoFlecha = funcionFlecha("Mundo Flecha");
+console.log(saludoFlecha);
+
+// Función con parámetros por defecto
+function saludarConDefecto(nombre = "Mundo") {
+  return "Hola, " + nombre;
+}
+let saludoConDefecto = saludarConDefecto();
+console.log(saludoConDefecto);
+
+
+
