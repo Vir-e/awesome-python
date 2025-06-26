@@ -104,3 +104,10 @@ let suma = sumar(1, 2, 3, 4, 5);
 console.log("Suma: " + suma);
 
 
+// Función con parámetros spread
+let numeros = [1, 2, 3];
+function mostrarNumeros(a, b, c) {
+  console.log("Números: " + a + ", " + b + ", " + c);
+}
+mostrarNumeros(...numeros);
+
