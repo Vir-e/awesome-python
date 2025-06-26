@@ -111,3 +111,23 @@ function mostrarNumeros(a, b, c) {
 }
 mostrarNumeros(...numeros);
 
+// Función con retorno implícito
+let multiplicar = (a, b) => a * b;
+let resultadoMultiplicacion = multiplicar(2, 3);
+console.log("Multiplicación: " + resultadoMultiplicacion);
+
+
+// Función con retorno explícito
+function dividir(a, b) {
+    if (b === 0) {
+        throw new Error("No se puede dividir por cero");
+    }
+    return a / b;
+    }
+try {
+    let resultadoDivision = dividir(10, 2);
+    console.log("División: " + resultadoDivision);
+} catch (error) {
+    console.error("Error: " + error.message);
+}   
+
